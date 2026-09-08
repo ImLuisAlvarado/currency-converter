@@ -1,2 +1,2 @@
 def convert_to_usd(mxn):
-    return mxn * 0.059
+    return print(f"{mxn} MXN son {mxn * 0.05} USD")

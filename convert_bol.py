@@ -8,12 +8,12 @@ def convertMxntoBob(bob):
     cambio = 1.36
     mexicanos = bob * cambio
     return mexicanos
-try: 
-    print("=====================================================")
-    peso = float(input("Ingresa la cantidad de peso mexicano: "))
+#try: 
+    #print("=====================================================")
+    #peso = float(input("Ingresa la cantidad de peso mexicano: "))
 
-    resultado = convertBobtoMxn(peso)
-    print(resultado)
+    #resultado = convertBobtoMxn(peso)
+    #print(resultado)
     
-except ValueError:
+#except ValueError:
     print("Ingresa valor valido.")

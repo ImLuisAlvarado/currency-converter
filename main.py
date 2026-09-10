@@ -3,6 +3,7 @@ from won_converter import mxn_to_krw
 from usd_converter import convert_to_usd
 from robux_converter import convertidor_robux
 from fuzetea_converter import pesos_a_fuze
+from cup_converter import mxn_to_cup
 
 from time import sleep
 
@@ -20,7 +21,7 @@ while True:
         "\n6. MXN a FuzeTeas" \
         "\nIngrese el número de la opción deseada: "))
 
-        if opcion not in [1, 2, 3, 5, 6]:
+        if opcion not in [1, 2, 3, 4, 5, 6]:
             raise ValueError("Opción fuera de rango")
 
     except ValueError:
@@ -54,7 +55,10 @@ while True:
         sleep(4)
 
     # Me pregunto si será una limusina
-    # elif opcion == 4:
+    elif opcion == 4:
+        cup = mxn_to_cup(mxn)
+        print(f"{mxn} MXN son {cup} CUP")
+        sleep(4)
 
     elif opcion == 5:
         convert_to_usd(mxn)
